@@ -1,0 +1,121 @@
+/*
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/*Gobal settings*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(62deg,#004b84,#001733);
+    color: hsl(215, 51%, 70%);
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+/*Card*/
+#card{
+    width: 350px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px 25px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 2px 4px 15px 2px #5f437d;
+    animation: position 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes position{
+    0% { right: 500px;}
+}
+/* Cubo */
+#cubo_img{
+    width: 300px;
+    border-radius: 15px;
+    position: relative;
+}
+#img_view{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+#img_view:hover{
+    opacity: 1;
+    background-color: rgba(64, 224, 208, 0.322);
+}
+/* Status */
+main h1{
+    font-size: 19px;
+    margin: 18px 0;
+}
+#status{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px;
+}
+#status div p{
+    margin: 0 8px 0;
+}
+#etherium{
+    display: flex;
+    align-items: center;
+}
+#etherium p{
+    color: #00fff8;
+}
+#time{
+    display: flex;
+    align-items: center;
+}
+footer{
+    display: flex;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 30px;
+}
+footer img{
+    width: 30px;
+    border: solid white 1px;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+}
+ .hover:hover{
+    color: #00fff8;
+}
